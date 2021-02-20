@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<module>
+  <admin attr="adminAttrib">
+    <module1>module/print/Dayclose.exe</module1>
+  </admin>
+</module>

@@ -1,0 +1,14 @@
+1 = next do transction details for daly accounting printing
+today 11 30 2019
+  and new interface designing done and xtrareport1 and all menue item are remaining 
+ to modify interface .....and i have to test form interface
+
+
+today 1 12 2019
+   change in post access all interface and new look and fill 
+    
+
+
+
+'*******************************
+ have to change sqlpost allinterface and print option and new barcode system

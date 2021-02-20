@@ -1,0 +1,31 @@
+﻿Public Class CLS_monthlyRpt
+    Public Property D_ate As String
+    Public Property Open_bal As Double
+    Public Property cashrec As Double
+    Public Property Sbdep As Double
+    Public Property rddep As Double
+    Public Property rdfine As Double
+    Public Property ssadep As Double
+    Public Property ssafine As Double
+    Public Property tddep As Double
+    Public Property rplidep As Double
+    Public Property rplifine As Double
+    Public Property rplitax As Double
+    Public Property vpp As Double
+    Public Property othcol1 As Double
+    Public Property othcol2 As Double
+    Public Property totaldep As Double
+    Public Property cashremet As Double
+    Public Property sbwith As Double
+    Public Property rdwith As Double
+    Public Property tdwith As Double
+    Public Property ssawith As Double
+    Public Property rpliwith As Double
+    Public Property MONwith As Double
+    Public Property othwith As Double
+    Public Property totalwith As Double
+    Public Property curr_ency As Double
+    Public Property stamp1 As Double
+    Public Property stamp2 As Double
+    Public Property colsebal As Double
+End Class

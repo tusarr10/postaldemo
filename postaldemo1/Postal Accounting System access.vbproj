@@ -1,0 +1,818 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{59AB5986-E58D-486C-AF2C-949534053799}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>postaldemo1.My.MyApplication</StartupObject>
+    <RootNamespace>postaldemo1</RootNamespace>
+    <AssemblyName>Postal Accounting System</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Vb Project Postal\WebSite1\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>TRP P A D</ProductName>
+    <PublisherName>TRP Solution</PublisherName>
+    <SuiteName>TRP</SuiteName>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Postal Accounting System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Postal Accounting System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>Postal Accounting System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>Postal Accounting System.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>E6D5C751718E4FEB52CA5ECDA875D8CAA95582F2</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Postal Accounting System_1_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>child-new-post-multi-size.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dapper, Version=1.40.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.1.42\lib\net45\Dapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v14.2.Core, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Dashboard.v14.2.Core, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Dashboard.v14.2.Win, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v14.2.UI, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.ExpressApp.Xpo.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Map.v14.2.Core, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v14.2.Core, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Persistent.Base.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v14.2.Core, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v14.2.Core, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v14.2.Core, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v14.2.Core, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v14.2.UI, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v14.2.UI, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v14.2.Wizard, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v14.2.Core, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v14.2.Win, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraMap.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v14.2.Extensions, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v14.2.Extensions, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v14.2.Core, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Google.Apis, Version=1.42.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.1.42.0\lib\net45\Google.Apis.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Google.Apis.Auth, Version=1.42.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Auth.1.42.0\lib\net45\Google.Apis.Auth.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Google.Apis.Auth.PlatformServices, Version=1.42.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Auth.1.42.0\lib\net45\Google.Apis.Auth.PlatformServices.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Google.Apis.Core, Version=1.42.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Core.1.42.0\lib\net45\Google.Apis.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Google.Apis.Drive.v2, Version=1.42.0.1778, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Drive.v2.1.42.0.1778\lib\net45\Google.Apis.Drive.v2.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Google.Apis.PlatformServices, Version=1.42.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.1.42.0\lib\net45\Google.Apis.PlatformServices.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.10.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Deployment">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Services">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="form\about\AboutBox1.Designer.vb">
+      <DependentUpon>AboutBox1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\about\AboutBox1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\about\AboutBox2.Designer.vb">
+      <DependentUpon>AboutBox2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\about\AboutBox2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\Dialog\dialogfrm.Designer.vb">
+      <DependentUpon>dialogfrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\Dialog\dialogfrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\Dialog\PrtDalyAc.Designer.vb">
+      <DependentUpon>PrtDalyAc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\Dialog\PrtDalyAc.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="form\journal\Bojurnal.Designer.vb">
+      <DependentUpon>Bojurnal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\journal\Bojurnal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\journal\dac.Designer.vb">
+      <DependentUpon>dac.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\journal\dac.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\journal\daclist.Designer.vb">
+      <DependentUpon>daclist.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\journal\daclist.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\NewFeature\All_transction.Designer.vb">
+      <DependentUpon>All_transction.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\NewFeature\All_transction.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\NewFeature\BackUpGoogl.Designer.vb">
+      <DependentUpon>BackUpGoogl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\NewFeature\BackUpGoogl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\NewFeature\prinUser.Designer.vb">
+      <DependentUpon>prinUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\NewFeature\prinUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\print\monthlyrpt.Designer.vb">
+      <DependentUpon>monthlyrpt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\print\monthlyrpt.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="form\print\PrintAll.Designer.vb">
+      <DependentUpon>PrintAll.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\print\PrintAll.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\print\PrintAllTransction.Designer.vb">
+      <DependentUpon>PrintAllTransction.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\print\PrintAllTransction.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="form\print\userinfo.Designer.vb">
+      <DependentUpon>userinfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\print\userinfo.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="form\print\userrpt_RS.Designer.vb">
+      <DependentUpon>userrpt_RS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\print\userrpt_RS.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="form\print\userrpt_TS.Designer.vb">
+      <DependentUpon>userrpt_TS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\print\userrpt_TS.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="form\print\XtraReport1.Designer.vb">
+      <DependentUpon>XtraReport1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\print\XtraReport1.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="form\Utility\Account Setting.Designer.vb">
+      <DependentUpon>Account Setting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\Utility\Account Setting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\Utility\accountSettingList.Designer.vb">
+      <DependentUpon>accountSettingList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\Utility\accountSettingList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\Utility\CashInfo.Designer.vb">
+      <DependentUpon>CashInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\Utility\CashInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\Utility\Reminder.Designer.vb">
+      <DependentUpon>Reminder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\Utility\Reminder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\WaitForm1.Designer.vb">
+      <DependentUpon>WaitForm1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\WaitForm1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modul\CLS_allTranction.vb" />
+    <Compile Include="modul\CLS_monthlyRpt.vb" />
+    <Compile Include="modul\CLS_prinuserd.vb" />
+    <Compile Include="modul\Cls_RS_userdetails.vb" />
+    <Compile Include="modul\Cls_TS_userdetails.vb" />
+    <Compile Include="modul\CLS_Utility.vb" />
+    <Compile Include="modul\db_con.vb" />
+    <Compile Include="form\about\Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\about\Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\mainfrm.Designer.vb">
+      <DependentUpon>mainfrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\mainfrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\trsjrn\RdAc.Designer.vb">
+      <DependentUpon>RdAc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\trsjrn\RdAc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\trsjrn\RDlist.Designer.vb">
+      <DependentUpon>RDlist.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\trsjrn\RDlist.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\trsjrn\SBAc.Designer.vb">
+      <DependentUpon>SBAc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\trsjrn\SBAc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\trsjrn\sbaclist.Designer.vb">
+      <DependentUpon>sbaclist.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\trsjrn\sbaclist.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\Settingfrm.Designer.vb">
+      <DependentUpon>Settingfrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\Settingfrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\trsjrn\sppost.Designer.vb">
+      <DependentUpon>sppost.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\trsjrn\sppost.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\trsjrn\sppostlist.Designer.vb">
+      <DependentUpon>sppostlist.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\trsjrn\sppostlist.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\trsjrn\SSA.Designer.vb">
+      <DependentUpon>SSA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\trsjrn\SSA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\trsjrn\ssalist.Designer.vb">
+      <DependentUpon>ssalist.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\trsjrn\ssalist.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\trsjrn\tdAc.Designer.vb">
+      <DependentUpon>tdAc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\trsjrn\tdAc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\trsjrn\tdlist.Designer.vb">
+      <DependentUpon>tdlist.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\trsjrn\tdlist.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\journal\translist.Designer.vb">
+      <DependentUpon>translist.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\journal\translist.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\trsjrn\UserAc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\trsjrn\UserAc.Designer.vb">
+      <DependentUpon>UserAc.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\trsjrn\Userlist.Designer.vb">
+      <DependentUpon>Userlist.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\trsjrn\Userlist.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\ImageShow.Designer.vb">
+      <DependentUpon>ImageShow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\ImageShow.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\NewFeature\monthlyReport.Designer.vb">
+      <DependentUpon>monthlyReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\NewFeature\monthlyReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modul\ClS_transdetail.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="form\PhotoShow.Designer.vb">
+      <DependentUpon>PhotoShow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\PhotoShow.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\NewFeature\transdetails.Designer.vb">
+      <DependentUpon>transdetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\NewFeature\transdetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\print\printfrm.Designer.vb">
+      <DependentUpon>printfrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\print\printfrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="form\about\AboutBox1.resx">
+      <DependentUpon>AboutBox1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\about\AboutBox2.resx">
+      <DependentUpon>AboutBox2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\Dialog\dialogfrm.resx">
+      <DependentUpon>dialogfrm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\Dialog\PrtDalyAc.resx">
+      <DependentUpon>PrtDalyAc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\journal\Bojurnal.resx">
+      <DependentUpon>Bojurnal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\journal\dac.resx">
+      <DependentUpon>dac.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\journal\daclist.resx">
+      <DependentUpon>daclist.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\about\Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\mainfrm.resx">
+      <DependentUpon>mainfrm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\NewFeature\All_transction.resx">
+      <DependentUpon>All_transction.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\NewFeature\BackUpGoogl.resx">
+      <DependentUpon>BackUpGoogl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\NewFeature\prinUser.resx">
+      <DependentUpon>prinUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\print\monthlyrpt.resx">
+      <DependentUpon>monthlyrpt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\print\PrintAll.resx">
+      <DependentUpon>PrintAll.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\print\PrintAllTransction.resx">
+      <DependentUpon>PrintAllTransction.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\print\userinfo.resx">
+      <DependentUpon>userinfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\print\userrpt_RS.resx">
+      <DependentUpon>userrpt_RS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\print\userrpt_TS.resx">
+      <DependentUpon>userrpt_TS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\print\XtraReport1.resx">
+      <DependentUpon>XtraReport1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\trsjrn\RdAc.resx">
+      <DependentUpon>RdAc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\trsjrn\RDlist.resx">
+      <DependentUpon>RDlist.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\trsjrn\SBAc.resx">
+      <DependentUpon>SBAc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\trsjrn\sbaclist.resx">
+      <DependentUpon>sbaclist.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\Settingfrm.resx">
+      <DependentUpon>Settingfrm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\trsjrn\sppost.resx">
+      <DependentUpon>sppost.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\trsjrn\sppostlist.resx">
+      <DependentUpon>sppostlist.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\trsjrn\SSA.resx">
+      <DependentUpon>SSA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\trsjrn\ssalist.resx">
+      <DependentUpon>ssalist.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\trsjrn\tdAc.resx">
+      <DependentUpon>tdAc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\trsjrn\tdlist.resx">
+      <DependentUpon>tdlist.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\journal\translist.resx">
+      <DependentUpon>translist.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\trsjrn\UserAc.resx">
+      <DependentUpon>UserAc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\trsjrn\Userlist.resx">
+      <DependentUpon>Userlist.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\ImageShow.resx">
+      <DependentUpon>ImageShow.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\NewFeature\monthlyReport.resx">
+      <DependentUpon>monthlyReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\Utility\Account Setting.resx">
+      <DependentUpon>Account Setting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\Utility\accountSettingList.resx">
+      <DependentUpon>accountSettingList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\Utility\CashInfo.resx">
+      <DependentUpon>CashInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\Utility\Reminder.resx">
+      <DependentUpon>Reminder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\WaitForm1.resx">
+      <DependentUpon>WaitForm1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\PhotoShow.resx">
+      <DependentUpon>PhotoShow.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\NewFeature\transdetails.resx">
+      <DependentUpon>transdetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\print\printfrm.resx">
+      <DependentUpon>printfrm.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\Image1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ippb1217.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\old-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Indian-Postal-Department-Logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\DaluAccountPrint.png" />
+    <Content Include="Resources\extension.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Resources\DaluAccountPrint1.png" />
+    <None Include="Resources\Menubmp.png" />
+    <None Include="Resources\worning.png" />
+    <None Include="Resources\tick.png" />
+    <None Include="Resources\print.jpg" />
+    <None Include="Resources\error.png" />
+    <None Include="Resources\8375987.jpg" />
+    <None Include="Resources\bell.png" />
+    <Content Include="child-new-post-multi-size.ico" />
+    <Content Include="Resources\changelog.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\thumb_cosmos-starts-green-1600x1200.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

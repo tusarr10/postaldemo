@@ -1075,9 +1075,9 @@ Partial Class dac
         Me.Label29.Location = New System.Drawing.Point(324, 11)
         Me.Label29.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label29.Name = "Label29"
-        Me.Label29.Size = New System.Drawing.Size(225, 20)
+        Me.Label29.Size = New System.Drawing.Size(233, 20)
         Me.Label29.TabIndex = 62
-        Me.Label29.Text = "Daly Account Of Gilli B.O"
+        Me.Label29.Text = "Daly Account Of talita B.O"
         '
         'Panel4
         '

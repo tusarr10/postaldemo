@@ -439,6 +439,12 @@
     <Compile Include="form\Utility\CashInfo.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="form\Utility\new_account.Designer.vb">
+      <DependentUpon>new_account.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\Utility\new_account.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="form\Utility\Reminder.Designer.vb">
       <DependentUpon>Reminder.vb</DependentUpon>
     </Compile>
@@ -716,6 +722,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="form\Utility\CashInfo.resx">
       <DependentUpon>CashInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\Utility\new_account.resx">
+      <DependentUpon>new_account.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="form\Utility\Reminder.resx">
       <DependentUpon>Reminder.vb</DependentUpon>

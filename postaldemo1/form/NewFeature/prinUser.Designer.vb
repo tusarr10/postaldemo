@@ -157,7 +157,7 @@ Partial Class prinUser
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(873, 18)
+        Me.Button1.Location = New System.Drawing.Point(1010, 20)
         Me.Button1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(83, 28)
@@ -263,7 +263,7 @@ Partial Class prinUser
         Me.FatherName.AppearanceHeader.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.FatherName.AppearanceHeader.Options.UseBackColor = True
         Me.FatherName.AppearanceHeader.Options.UseBorderColor = True
-        Me.FatherName.Caption = "FatherName"
+        Me.FatherName.Caption = "Guardian"
         Me.FatherName.FieldName = "FatherName"
         Me.FatherName.Name = "FatherName"
         Me.FatherName.Visible = True
@@ -371,7 +371,7 @@ Partial Class prinUser
         Me.CautionMoneyReceiptNo.AppearanceHeader.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.CautionMoneyReceiptNo.AppearanceHeader.Options.UseBackColor = True
         Me.CautionMoneyReceiptNo.AppearanceHeader.Options.UseBorderColor = True
-        Me.CautionMoneyReceiptNo.Caption = "CautionMoneyReceiptNo"
+        Me.CautionMoneyReceiptNo.Caption = "MoneyReceiptNo"
         Me.CautionMoneyReceiptNo.FieldName = "CautionMoneyReceiptNo"
         Me.CautionMoneyReceiptNo.Name = "CautionMoneyReceiptNo"
         Me.CautionMoneyReceiptNo.Visible = True

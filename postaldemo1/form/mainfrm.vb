@@ -6,6 +6,7 @@ Public Class mainfrm
     ' Public css As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & Application.StartupPath + "\" & Settingfrm.TextBox1.Text & ";Jet OLEDB:Database Password=" & Settingfrm.TextBox2.Text & ";"
 
     Private Sub mainfrm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.WindowState = FormWindowState.Maximized
         Try
             Dim xy As Date = Now
 
@@ -219,5 +220,27 @@ Public Class mainfrm
 
         '  Application.Exit()
 
+    End Sub
+
+    Private Sub LogOutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LogOutToolStripMenuItem.Click
+        Application.Exit()
+
+    End Sub
+
+    Private Sub ShutDownToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ShutDownToolStripMenuItem.Click
+        Application.Exit()
+
+    End Sub
+
+    Private Sub RestartToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RestartToolStripMenuItem.Click
+        Application.Restart()
+
+    End Sub
+
+    Private Sub OpenNewAccountToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OpenNewAccountToolStripMenuItem.Click
+        waitopen()
+        new_account.MdiParent = Me
+        new_account.WindowState = FormWindowState.Normal
+        new_account.Show() : waitclose()
     End Sub
 End Class

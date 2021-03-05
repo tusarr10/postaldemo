@@ -439,6 +439,12 @@
     <Compile Include="form\Utility\CashInfo.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="form\Utility\newUserData.Designer.vb">
+      <DependentUpon>newUserData.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\Utility\newUserData.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="form\Utility\new_account.Designer.vb">
       <DependentUpon>new_account.vb</DependentUpon>
     </Compile>
@@ -458,6 +464,7 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="modul\CLS_allTranction.vb" />
+    <Compile Include="modul\CLS_alluser.vb" />
     <Compile Include="modul\CLS_monthlyRpt.vb" />
     <Compile Include="modul\CLS_prinuserd.vb" />
     <Compile Include="modul\Cls_RS_userdetails.vb" />
@@ -723,6 +730,9 @@
     <EmbeddedResource Include="form\Utility\CashInfo.resx">
       <DependentUpon>CashInfo.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="form\Utility\newUserData.resx">
+      <DependentUpon>newUserData.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="form\Utility\new_account.resx">
       <DependentUpon>new_account.vb</DependentUpon>
     </EmbeddedResource>
@@ -779,6 +789,9 @@
     <None Include="Resources\Indian-Postal-Department-Logo.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\userimglbl.png" />
+    <None Include="Resources\Settlbl.png" />
+    <None Include="Resources\btnusr.png" />
     <Content Include="Resources\DaluAccountPrint.png" />
     <Content Include="Resources\extension.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

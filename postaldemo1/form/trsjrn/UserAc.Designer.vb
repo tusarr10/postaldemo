@@ -143,7 +143,7 @@ Partial Class UserAc
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Palatino Linotype", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.Black
-        Me.Label7.Location = New System.Drawing.Point(55, 99)
+        Me.Label7.Location = New System.Drawing.Point(45, 99)
         Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(44, 26)
@@ -157,7 +157,7 @@ Partial Class UserAc
         Me.txtEmail.Margin = New System.Windows.Forms.Padding(4)
         Me.txtEmail.Multiline = True
         Me.txtEmail.Name = "txtEmail"
-        Me.txtEmail.Size = New System.Drawing.Size(161, 26)
+        Me.txtEmail.Size = New System.Drawing.Size(161, 37)
         Me.txtEmail.TabIndex = 1
         '
         'Button1
@@ -233,8 +233,9 @@ Partial Class UserAc
         Me.cmbCourse.Location = New System.Drawing.Point(304, 271)
         Me.cmbCourse.Margin = New System.Windows.Forms.Padding(4)
         Me.cmbCourse.Name = "cmbCourse"
-        Me.cmbCourse.Size = New System.Drawing.Size(380, 34)
+        Me.cmbCourse.Size = New System.Drawing.Size(189, 34)
         Me.cmbCourse.TabIndex = 5
+        Me.cmbCourse.Text = "DD/MMM/YYYY"
         '
         'txtSession
         '
@@ -390,6 +391,7 @@ Partial Class UserAc
         Me.txtPermanentAddress.ScrollBars = System.Windows.Forms.ScrollBars.Both
         Me.txtPermanentAddress.Size = New System.Drawing.Size(297, 29)
         Me.txtPermanentAddress.TabIndex = 11
+        Me.txtPermanentAddress.Text = "M/A"
         '
         'Label3
         '
@@ -504,9 +506,9 @@ Partial Class UserAc
         Me.Label11.Location = New System.Drawing.Point(40, 273)
         Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(146, 26)
+        Me.Label11.Size = New System.Drawing.Size(65, 26)
         Me.Label11.TabIndex = 22
-        Me.Label11.Text = "*Mother Name"
+        Me.Label11.Text = "*DOB"
         '
         'label28
         '
@@ -592,9 +594,9 @@ Partial Class UserAc
         Me.Label10.Location = New System.Drawing.Point(41, 229)
         Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(149, 26)
+        Me.Label10.Size = New System.Drawing.Size(165, 26)
         Me.Label10.TabIndex = 6
-        Me.Label10.Text = "*Father's Name"
+        Me.Label10.Text = "*Guardian Name"
         '
         'label6
         '
@@ -603,9 +605,9 @@ Partial Class UserAc
         Me.label6.Location = New System.Drawing.Point(41, 608)
         Me.label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.label6.Name = "label6"
-        Me.label6.Size = New System.Drawing.Size(65, 26)
+        Me.label6.Size = New System.Drawing.Size(196, 26)
         Me.label6.TabIndex = 7
-        Me.label6.Text = "*DOB"
+        Me.label6.Text = "*Account Open Date"
         '
         'label2
         '

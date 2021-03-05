@@ -1,4 +1,6 @@
 ﻿Add New Feture ::
+	File Version :: 2.5.0.5
+	changes= add new feture show new account
 	File Version :: 2.5.0.0
 	Changes :
 			1->Add Talita Bo Backup feture

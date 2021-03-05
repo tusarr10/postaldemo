@@ -24,47 +24,52 @@ Partial Class new_account
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(new_account))
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.GroupBox6 = New System.Windows.Forms.GroupBox()
         Me.Label13 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Acbal = New System.Windows.Forms.TextBox()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.txtMobileNo = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.txtPermanentAddress = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.dtpDOB = New System.Windows.Forms.DateTimePicker()
+        Me.cmbDepartment = New System.Windows.Forms.ComboBox()
+        Me.txtReceiptNo = New System.Windows.Forms.TextBox()
+        Me.label25 = New System.Windows.Forms.Label()
+        Me.label9 = New System.Windows.Forms.Label()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox5 = New System.Windows.Forms.GroupBox()
+        Me.rbFemale = New System.Windows.Forms.RadioButton()
+        Me.rbMale = New System.Windows.Forms.RadioButton()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.txtAdhar = New System.Windows.Forms.TextBox()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.cmbCourse = New System.Windows.Forms.TextBox()
+        Me.txtSession = New System.Windows.Forms.TextBox()
+        Me.txtFatherName = New System.Windows.Forms.TextBox()
+        Me.txtRollNo = New System.Windows.Forms.TextBox()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.label8 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.Button1 = New DevExpress.XtraEditors.SimpleButton()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtStudentID = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.txtPhoneNo = New System.Windows.Forms.TextBox()
         Me.label29 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.txtEmail = New System.Windows.Forms.TextBox()
-        Me.Button1 = New DevExpress.XtraEditors.SimpleButton()
-        Me.txtAdhar = New System.Windows.Forms.TextBox()
-        Me.Label15 = New System.Windows.Forms.Label()
-        Me.Acbal = New System.Windows.Forms.TextBox()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.cmbCourse = New System.Windows.Forms.TextBox()
-        Me.txtSession = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtStudentName = New System.Windows.Forms.TextBox()
+        Me.label1 = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.rbFemale = New System.Windows.Forms.RadioButton()
-        Me.rbMale = New System.Windows.Forms.RadioButton()
-        Me.txtStudentID = New System.Windows.Forms.TextBox()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.txtMobileNo = New System.Windows.Forms.TextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.txtStudentName = New System.Windows.Forms.TextBox()
-        Me.txtPermanentAddress = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.dtpDOB = New System.Windows.Forms.DateTimePicker()
         Me.Browse = New System.Windows.Forms.Button()
-        Me.cmbDepartment = New System.Windows.Forms.ComboBox()
         Me.txtTempAddress = New System.Windows.Forms.TextBox()
-        Me.txtFatherName = New System.Windows.Forms.TextBox()
-        Me.txtRollNo = New System.Windows.Forms.TextBox()
-        Me.txtReceiptNo = New System.Windows.Forms.TextBox()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.label25 = New System.Windows.Forms.Label()
         Me.Picture = New System.Windows.Forms.PictureBox()
-        Me.label9 = New System.Windows.Forms.Label()
-        Me.label8 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.label1 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Button4 = New DevExpress.XtraEditors.SimpleButton()
         Me.Button3 = New DevExpress.XtraEditors.SimpleButton()
@@ -73,6 +78,11 @@ Partial Class new_account
         Me.btnSave = New DevExpress.XtraEditors.SimpleButton()
         Me.btnNewRecord = New DevExpress.XtraEditors.SimpleButton()
         Me.Panel1.SuspendLayout()
+        Me.GroupBox6.SuspendLayout()
+        Me.GroupBox3.SuspendLayout()
+        Me.GroupBox5.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
+        Me.GroupBox4.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Picture, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -81,51 +91,40 @@ Partial Class new_account
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.Panel1.Controls.Add(Me.Label13)
+        Me.Panel1.Controls.Add(Me.GroupBox6)
+        Me.Panel1.Controls.Add(Me.GroupBox3)
+        Me.Panel1.Controls.Add(Me.GroupBox2)
         Me.Panel1.Controls.Add(Me.Label12)
-        Me.Panel1.Controls.Add(Me.Label6)
-        Me.Panel1.Controls.Add(Me.Label2)
-        Me.Panel1.Controls.Add(Me.txtPhoneNo)
-        Me.Panel1.Controls.Add(Me.label29)
-        Me.Panel1.Controls.Add(Me.Label7)
-        Me.Panel1.Controls.Add(Me.txtEmail)
-        Me.Panel1.Controls.Add(Me.Button1)
-        Me.Panel1.Controls.Add(Me.txtAdhar)
-        Me.Panel1.Controls.Add(Me.Label15)
-        Me.Panel1.Controls.Add(Me.Acbal)
-        Me.Panel1.Controls.Add(Me.Label14)
-        Me.Panel1.Controls.Add(Me.cmbCourse)
-        Me.Panel1.Controls.Add(Me.txtSession)
-        Me.Panel1.Controls.Add(Me.TextBox1)
         Me.Panel1.Controls.Add(Me.Button2)
         Me.Panel1.Controls.Add(Me.PictureBox1)
-        Me.Panel1.Controls.Add(Me.rbFemale)
-        Me.Panel1.Controls.Add(Me.rbMale)
-        Me.Panel1.Controls.Add(Me.txtStudentID)
-        Me.Panel1.Controls.Add(Me.Label5)
-        Me.Panel1.Controls.Add(Me.txtMobileNo)
-        Me.Panel1.Controls.Add(Me.Label4)
-        Me.Panel1.Controls.Add(Me.txtStudentName)
-        Me.Panel1.Controls.Add(Me.txtPermanentAddress)
-        Me.Panel1.Controls.Add(Me.Label3)
-        Me.Panel1.Controls.Add(Me.dtpDOB)
         Me.Panel1.Controls.Add(Me.Browse)
-        Me.Panel1.Controls.Add(Me.cmbDepartment)
         Me.Panel1.Controls.Add(Me.txtTempAddress)
-        Me.Panel1.Controls.Add(Me.txtFatherName)
-        Me.Panel1.Controls.Add(Me.txtRollNo)
-        Me.Panel1.Controls.Add(Me.txtReceiptNo)
-        Me.Panel1.Controls.Add(Me.Label11)
-        Me.Panel1.Controls.Add(Me.label25)
         Me.Panel1.Controls.Add(Me.Picture)
-        Me.Panel1.Controls.Add(Me.label9)
-        Me.Panel1.Controls.Add(Me.label8)
-        Me.Panel1.Controls.Add(Me.Label10)
-        Me.Panel1.Controls.Add(Me.label1)
         Me.Panel1.Location = New System.Drawing.Point(21, 55)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1028, 759)
         Me.Panel1.TabIndex = 0
+        '
+        'GroupBox6
+        '
+        Me.GroupBox6.Controls.Add(Me.Label13)
+        Me.GroupBox6.Controls.Add(Me.Acbal)
+        Me.GroupBox6.Controls.Add(Me.Label14)
+        Me.GroupBox6.Controls.Add(Me.txtMobileNo)
+        Me.GroupBox6.Controls.Add(Me.Label4)
+        Me.GroupBox6.Controls.Add(Me.txtPermanentAddress)
+        Me.GroupBox6.Controls.Add(Me.Label3)
+        Me.GroupBox6.Controls.Add(Me.dtpDOB)
+        Me.GroupBox6.Controls.Add(Me.cmbDepartment)
+        Me.GroupBox6.Controls.Add(Me.txtReceiptNo)
+        Me.GroupBox6.Controls.Add(Me.label25)
+        Me.GroupBox6.Controls.Add(Me.label9)
+        Me.GroupBox6.Location = New System.Drawing.Point(19, 542)
+        Me.GroupBox6.Name = "GroupBox6"
+        Me.GroupBox6.Size = New System.Drawing.Size(954, 170)
+        Me.GroupBox6.TabIndex = 2
+        Me.GroupBox6.TabStop = False
+        Me.GroupBox6.Text = "Account"
         '
         'Label13
         '
@@ -133,27 +132,202 @@ Partial Class new_account
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Palatino Linotype", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.ForeColor = System.Drawing.Color.Black
-        Me.Label13.Location = New System.Drawing.Point(30, 673)
+        Me.Label13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label13.Location = New System.Drawing.Point(12, 120)
         Me.Label13.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(63, 26)
-        Me.Label13.TabIndex = 711
-        Me.Label13.Text = "*Date"
+        Me.Label13.Size = New System.Drawing.Size(186, 26)
+        Me.Label13.TabIndex = 8
+        Me.Label13.Text = "*AccountOpenDate"
         '
-        'Label12
+        'Acbal
         '
-        Me.Label12.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+        Me.Acbal.Font = New System.Drawing.Font("Palatino Linotype", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Acbal.Location = New System.Drawing.Point(722, 123)
+        Me.Acbal.Margin = New System.Windows.Forms.Padding(4)
+        Me.Acbal.Name = "Acbal"
+        Me.Acbal.Size = New System.Drawing.Size(220, 34)
+        Me.Acbal.TabIndex = 5
+        Me.Acbal.Text = "0"
+        '
+        'Label14
+        '
+        Me.Label14.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Palatino Linotype", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.ForeColor = System.Drawing.Color.Black
-        Me.Label12.Location = New System.Drawing.Point(30, 567)
-        Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(93, 26)
-        Me.Label12.TabIndex = 710
-        Me.Label12.Text = "*Address"
+        Me.Label14.AutoSize = True
+        Me.Label14.Font = New System.Drawing.Font("Palatino Linotype", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label14.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label14.Location = New System.Drawing.Point(560, 123)
+        Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(146, 23)
+        Me.Label14.TabIndex = 701
+        Me.Label14.Text = "*Account Balance"
+        '
+        'txtMobileNo
+        '
+        Me.txtMobileNo.Font = New System.Drawing.Font("Palatino Linotype", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtMobileNo.Location = New System.Drawing.Point(722, 73)
+        Me.txtMobileNo.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtMobileNo.Name = "txtMobileNo"
+        Me.txtMobileNo.Size = New System.Drawing.Size(220, 34)
+        Me.txtMobileNo.TabIndex = 4
+        '
+        'Label4
+        '
+        Me.Label4.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Palatino Linotype", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label4.Location = New System.Drawing.Point(590, 73)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(103, 23)
+        Me.Label4.TabIndex = 10
+        Me.Label4.Text = "*Mobile No."
+        '
+        'txtPermanentAddress
+        '
+        Me.txtPermanentAddress.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPermanentAddress.Location = New System.Drawing.Point(272, 62)
+        Me.txtPermanentAddress.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtPermanentAddress.Multiline = True
+        Me.txtPermanentAddress.Name = "txtPermanentAddress"
+        Me.txtPermanentAddress.ScrollBars = System.Windows.Forms.ScrollBars.Both
+        Me.txtPermanentAddress.Size = New System.Drawing.Size(297, 29)
+        Me.txtPermanentAddress.TabIndex = 1
+        Me.txtPermanentAddress.Text = "m/a"
+        '
+        'Label3
+        '
+        Me.Label3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Palatino Linotype", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label3.Location = New System.Drawing.Point(17, 69)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(156, 26)
+        Me.Label3.TabIndex = 7
+        Me.Label3.Text = "Minor Or Major"
+        '
+        'dtpDOB
+        '
+        Me.dtpDOB.CustomFormat = "dd MMM yyyy"
+        Me.dtpDOB.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dtpDOB.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.dtpDOB.Location = New System.Drawing.Point(272, 114)
+        Me.dtpDOB.Margin = New System.Windows.Forms.Padding(4)
+        Me.dtpDOB.Name = "dtpDOB"
+        Me.dtpDOB.Size = New System.Drawing.Size(161, 26)
+        Me.dtpDOB.TabIndex = 2
+        '
+        'cmbDepartment
+        '
+        Me.cmbDepartment.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.cmbDepartment.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.cmbDepartment.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbDepartment.FormattingEnabled = True
+        Me.cmbDepartment.ItemHeight = 18
+        Me.cmbDepartment.Items.AddRange(New Object() {"Saving Account", "Requiring Deposit", "SS Account", "Time Deposit", "RPLI Deposit"})
+        Me.cmbDepartment.Location = New System.Drawing.Point(271, 21)
+        Me.cmbDepartment.Margin = New System.Windows.Forms.Padding(4)
+        Me.cmbDepartment.Name = "cmbDepartment"
+        Me.cmbDepartment.Size = New System.Drawing.Size(189, 26)
+        Me.cmbDepartment.TabIndex = 0
+        Me.cmbDepartment.Text = "Chose One"
+        '
+        'txtReceiptNo
+        '
+        Me.txtReceiptNo.Font = New System.Drawing.Font("Palatino Linotype", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtReceiptNo.Location = New System.Drawing.Point(722, 27)
+        Me.txtReceiptNo.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtReceiptNo.Name = "txtReceiptNo"
+        Me.txtReceiptNo.Size = New System.Drawing.Size(220, 34)
+        Me.txtReceiptNo.TabIndex = 3
+        '
+        'label25
+        '
+        Me.label25.AutoSize = True
+        Me.label25.Font = New System.Drawing.Font("Palatino Linotype", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.label25.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.label25.Location = New System.Drawing.Point(8, 27)
+        Me.label25.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.label25.Name = "label25"
+        Me.label25.Size = New System.Drawing.Size(144, 26)
+        Me.label25.TabIndex = 6
+        Me.label25.Text = "*Account Type"
+        '
+        'label9
+        '
+        Me.label9.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.label9.AutoSize = True
+        Me.label9.Font = New System.Drawing.Font("Palatino Linotype", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.label9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.label9.Location = New System.Drawing.Point(590, 27)
+        Me.label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.label9.Name = "label9"
+        Me.label9.Size = New System.Drawing.Size(106, 23)
+        Me.label9.TabIndex = 9
+        Me.label9.Text = "*Receipt No."
+        '
+        'GroupBox3
+        '
+        Me.GroupBox3.Controls.Add(Me.GroupBox5)
+        Me.GroupBox3.Controls.Add(Me.Label6)
+        Me.GroupBox3.Controls.Add(Me.Label2)
+        Me.GroupBox3.Controls.Add(Me.txtAdhar)
+        Me.GroupBox3.Controls.Add(Me.Label15)
+        Me.GroupBox3.Controls.Add(Me.cmbCourse)
+        Me.GroupBox3.Controls.Add(Me.txtSession)
+        Me.GroupBox3.Controls.Add(Me.txtFatherName)
+        Me.GroupBox3.Controls.Add(Me.txtRollNo)
+        Me.GroupBox3.Controls.Add(Me.Label11)
+        Me.GroupBox3.Controls.Add(Me.label8)
+        Me.GroupBox3.Controls.Add(Me.Label10)
+        Me.GroupBox3.Location = New System.Drawing.Point(16, 255)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(687, 270)
+        Me.GroupBox3.TabIndex = 6
+        Me.GroupBox3.TabStop = False
+        Me.GroupBox3.Text = "Additional Details."
+        '
+        'GroupBox5
+        '
+        Me.GroupBox5.Controls.Add(Me.rbFemale)
+        Me.GroupBox5.Controls.Add(Me.rbMale)
+        Me.GroupBox5.Location = New System.Drawing.Point(274, 12)
+        Me.GroupBox5.Name = "GroupBox5"
+        Me.GroupBox5.Size = New System.Drawing.Size(259, 36)
+        Me.GroupBox5.TabIndex = 0
+        Me.GroupBox5.TabStop = False
+        '
+        'rbFemale
+        '
+        Me.rbFemale.AutoSize = True
+        Me.rbFemale.Location = New System.Drawing.Point(115, 10)
+        Me.rbFemale.Margin = New System.Windows.Forms.Padding(4)
+        Me.rbFemale.Name = "rbFemale"
+        Me.rbFemale.Size = New System.Drawing.Size(75, 21)
+        Me.rbFemale.TabIndex = 1
+        Me.rbFemale.TabStop = True
+        Me.rbFemale.Text = "Female"
+        Me.rbFemale.UseVisualStyleBackColor = True
+        '
+        'rbMale
+        '
+        Me.rbMale.AutoSize = True
+        Me.rbMale.Location = New System.Drawing.Point(11, 12)
+        Me.rbMale.Margin = New System.Windows.Forms.Padding(4)
+        Me.rbMale.Name = "rbMale"
+        Me.rbMale.Size = New System.Drawing.Size(59, 21)
+        Me.rbMale.TabIndex = 0
+        Me.rbMale.TabStop = True
+        Me.rbMale.Text = "Male"
+        Me.rbMale.UseVisualStyleBackColor = True
         '
         'Label6
         '
@@ -161,12 +335,12 @@ Partial Class new_account
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Palatino Linotype", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.Color.Black
-        Me.Label6.Location = New System.Drawing.Point(30, 437)
+        Me.Label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label6.Location = New System.Drawing.Point(14, 190)
         Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(62, 26)
-        Me.Label6.TabIndex = 709
+        Me.Label6.TabIndex = 10
         Me.Label6.Text = "*PAN"
         '
         'Label2
@@ -175,60 +349,142 @@ Partial Class new_account
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Palatino Linotype", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.Black
-        Me.Label2.Location = New System.Drawing.Point(29, 249)
+        Me.Label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label2.Location = New System.Drawing.Point(13, 22)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(88, 26)
-        Me.Label2.TabIndex = 708
+        Me.Label2.TabIndex = 6
         Me.Label2.Text = "*Gender"
         '
-        'txtPhoneNo
+        'txtAdhar
         '
-        Me.txtPhoneNo.Font = New System.Drawing.Font("Palatino Linotype", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPhoneNo.Location = New System.Drawing.Point(289, 160)
-        Me.txtPhoneNo.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtPhoneNo.Name = "txtPhoneNo"
-        Me.txtPhoneNo.Size = New System.Drawing.Size(220, 34)
-        Me.txtPhoneNo.TabIndex = 706
+        Me.txtAdhar.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtAdhar.Font = New System.Drawing.Font("Palatino Linotype", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtAdhar.Location = New System.Drawing.Point(273, 227)
+        Me.txtAdhar.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtAdhar.Name = "txtAdhar"
+        Me.txtAdhar.Size = New System.Drawing.Size(189, 34)
+        Me.txtAdhar.TabIndex = 5
         '
-        'label29
+        'Label15
         '
-        Me.label29.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+        Me.Label15.AutoSize = True
+        Me.Label15.Font = New System.Drawing.Font("Palatino Linotype", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label15.Location = New System.Drawing.Point(14, 232)
+        Me.Label15.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(109, 26)
+        Me.Label15.TabIndex = 11
+        Me.Label15.Text = "*Adhar No"
+        '
+        'cmbCourse
+        '
+        Me.cmbCourse.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.cmbCourse.Font = New System.Drawing.Font("Palatino Linotype", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbCourse.Location = New System.Drawing.Point(274, 95)
+        Me.cmbCourse.Margin = New System.Windows.Forms.Padding(4)
+        Me.cmbCourse.Name = "cmbCourse"
+        Me.cmbCourse.Size = New System.Drawing.Size(188, 34)
+        Me.cmbCourse.TabIndex = 2
+        Me.cmbCourse.Text = "DD/MMM/YYYY"
+        '
+        'txtSession
+        '
+        Me.txtSession.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtSession.Font = New System.Drawing.Font("Palatino Linotype", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtSession.Location = New System.Drawing.Point(274, 186)
+        Me.txtSession.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtSession.Name = "txtSession"
+        Me.txtSession.Size = New System.Drawing.Size(189, 34)
+        Me.txtSession.TabIndex = 4
+        '
+        'txtFatherName
+        '
+        Me.txtFatherName.Font = New System.Drawing.Font("Palatino Linotype", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtFatherName.Location = New System.Drawing.Point(274, 48)
+        Me.txtFatherName.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtFatherName.Name = "txtFatherName"
+        Me.txtFatherName.Size = New System.Drawing.Size(380, 34)
+        Me.txtFatherName.TabIndex = 1
+        '
+        'txtRollNo
+        '
+        Me.txtRollNo.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtRollNo.Font = New System.Drawing.Font("Palatino Linotype", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtRollNo.Location = New System.Drawing.Point(274, 143)
+        Me.txtRollNo.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtRollNo.Name = "txtRollNo"
+        Me.txtRollNo.Size = New System.Drawing.Size(380, 34)
+        Me.txtRollNo.TabIndex = 3
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Palatino Linotype", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label11.Location = New System.Drawing.Point(10, 97)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(65, 26)
+        Me.Label11.TabIndex = 8
+        Me.Label11.Text = "*DOB"
+        '
+        'label8
+        '
+        Me.label8.AutoSize = True
+        Me.label8.Font = New System.Drawing.Font("Palatino Linotype", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.label8.Location = New System.Drawing.Point(10, 145)
+        Me.label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.label8.Name = "label8"
+        Me.label8.Size = New System.Drawing.Size(148, 26)
+        Me.label8.TabIndex = 9
+        Me.label8.Text = "*Nomini Name"
+        '
+        'Label10
+        '
+        Me.Label10.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.label29.AutoSize = True
-        Me.label29.Font = New System.Drawing.Font("Palatino Linotype", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label29.ForeColor = System.Drawing.Color.Black
-        Me.label29.Location = New System.Drawing.Point(29, 163)
-        Me.label29.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.label29.Name = "label29"
-        Me.label29.Size = New System.Drawing.Size(80, 26)
-        Me.label29.TabIndex = 707
-        Me.label29.Text = "Ref No."
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Palatino Linotype", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label10.Location = New System.Drawing.Point(11, 53)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(165, 26)
+        Me.Label10.TabIndex = 7
+        Me.Label10.Text = "*Guardian Name"
         '
-        'Label7
+        'GroupBox2
         '
-        Me.Label7.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Palatino Linotype", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.ForeColor = System.Drawing.Color.Black
-        Me.Label7.Location = New System.Drawing.Point(40, 115)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(44, 26)
-        Me.Label7.TabIndex = 705
-        Me.Label7.Text = "CIF"
+        Me.GroupBox2.Controls.Add(Me.GroupBox4)
+        Me.GroupBox2.Controls.Add(Me.txtPhoneNo)
+        Me.GroupBox2.Controls.Add(Me.label29)
+        Me.GroupBox2.Controls.Add(Me.Label7)
+        Me.GroupBox2.Controls.Add(Me.txtEmail)
+        Me.GroupBox2.Controls.Add(Me.txtStudentName)
+        Me.GroupBox2.Controls.Add(Me.label1)
+        Me.GroupBox2.Location = New System.Drawing.Point(10, 3)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(659, 246)
+        Me.GroupBox2.TabIndex = 0
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "iNFORMATION.."
         '
-        'txtEmail
+        'GroupBox4
         '
-        Me.txtEmail.Font = New System.Drawing.Font("Palatino Linotype", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtEmail.Location = New System.Drawing.Point(289, 111)
-        Me.txtEmail.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtEmail.Multiline = True
-        Me.txtEmail.Name = "txtEmail"
-        Me.txtEmail.Size = New System.Drawing.Size(161, 26)
-        Me.txtEmail.TabIndex = 704
+        Me.GroupBox4.Controls.Add(Me.Button1)
+        Me.GroupBox4.Controls.Add(Me.TextBox1)
+        Me.GroupBox4.Controls.Add(Me.txtStudentID)
+        Me.GroupBox4.Controls.Add(Me.Label5)
+        Me.GroupBox4.Location = New System.Drawing.Point(18, 19)
+        Me.GroupBox4.Name = "GroupBox4"
+        Me.GroupBox4.Size = New System.Drawing.Size(511, 90)
+        Me.GroupBox4.TabIndex = 0
+        Me.GroupBox4.TabStop = False
+        Me.GroupBox4.Text = "Account"
         '
         'Button1
         '
@@ -243,87 +499,131 @@ Partial Class new_account
         Me.Button1.Appearance.Options.UseForeColor = True
         Me.Button1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D
         Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
-        Me.Button1.Location = New System.Drawing.Point(458, 66)
+        Me.Button1.Location = New System.Drawing.Point(430, 39)
         Me.Button1.Margin = New System.Windows.Forms.Padding(4)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(52, 34)
-        Me.Button1.TabIndex = 703
+        Me.Button1.TabIndex = 2
         Me.Button1.Text = "&New"
-        '
-        'txtAdhar
-        '
-        Me.txtAdhar.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtAdhar.Font = New System.Drawing.Font("Palatino Linotype", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtAdhar.Location = New System.Drawing.Point(289, 482)
-        Me.txtAdhar.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtAdhar.Name = "txtAdhar"
-        Me.txtAdhar.Size = New System.Drawing.Size(189, 34)
-        Me.txtAdhar.TabIndex = 680
-        '
-        'Label15
-        '
-        Me.Label15.AutoSize = True
-        Me.Label15.Font = New System.Drawing.Font("Palatino Linotype", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(30, 487)
-        Me.Label15.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(109, 26)
-        Me.Label15.TabIndex = 702
-        Me.Label15.Text = "*Adhar No"
-        '
-        'Acbal
-        '
-        Me.Acbal.Enabled = False
-        Me.Acbal.Font = New System.Drawing.Font("Palatino Linotype", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Acbal.Location = New System.Drawing.Point(744, 665)
-        Me.Acbal.Margin = New System.Windows.Forms.Padding(4)
-        Me.Acbal.Name = "Acbal"
-        Me.Acbal.Size = New System.Drawing.Size(220, 34)
-        Me.Acbal.TabIndex = 691
-        Me.Acbal.Text = "0"
-        '
-        'Label14
-        '
-        Me.Label14.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label14.AutoSize = True
-        Me.Label14.Font = New System.Drawing.Font("Palatino Linotype", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.ForeColor = System.Drawing.Color.Black
-        Me.Label14.Location = New System.Drawing.Point(582, 665)
-        Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(146, 23)
-        Me.Label14.TabIndex = 701
-        Me.Label14.Text = "*Account Balance"
-        '
-        'cmbCourse
-        '
-        Me.cmbCourse.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.cmbCourse.Font = New System.Drawing.Font("Palatino Linotype", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmbCourse.Location = New System.Drawing.Point(290, 337)
-        Me.cmbCourse.Margin = New System.Windows.Forms.Padding(4)
-        Me.cmbCourse.Name = "cmbCourse"
-        Me.cmbCourse.Size = New System.Drawing.Size(380, 34)
-        Me.cmbCourse.TabIndex = 675
-        '
-        'txtSession
-        '
-        Me.txtSession.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtSession.Font = New System.Drawing.Font("Palatino Linotype", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtSession.Location = New System.Drawing.Point(290, 433)
-        Me.txtSession.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtSession.Name = "txtSession"
-        Me.txtSession.Size = New System.Drawing.Size(189, 34)
-        Me.txtSession.TabIndex = 678
         '
         'TextBox1
         '
         Me.TextBox1.Font = New System.Drawing.Font("Palatino Linotype", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(289, 69)
+        Me.TextBox1.Location = New System.Drawing.Point(261, 45)
         Me.TextBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(157, 34)
-        Me.TextBox1.TabIndex = 669
+        Me.TextBox1.TabIndex = 1
+        '
+        'txtStudentID
+        '
+        Me.txtStudentID.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtStudentID.Enabled = False
+        Me.txtStudentID.Font = New System.Drawing.Font("Palatino Linotype", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtStudentID.Location = New System.Drawing.Point(262, 10)
+        Me.txtStudentID.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtStudentID.Name = "txtStudentID"
+        Me.txtStudentID.ReadOnly = True
+        Me.txtStudentID.Size = New System.Drawing.Size(159, 34)
+        Me.txtStudentID.TabIndex = 0
+        '
+        'Label5
+        '
+        Me.Label5.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Palatino Linotype", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label5.Location = New System.Drawing.Point(2, 32)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(149, 26)
+        Me.Label5.TabIndex = 3
+        Me.Label5.Text = "Custmor Ac No"
+        '
+        'txtPhoneNo
+        '
+        Me.txtPhoneNo.Font = New System.Drawing.Font("Palatino Linotype", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPhoneNo.Location = New System.Drawing.Point(279, 149)
+        Me.txtPhoneNo.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtPhoneNo.Name = "txtPhoneNo"
+        Me.txtPhoneNo.Size = New System.Drawing.Size(220, 34)
+        Me.txtPhoneNo.TabIndex = 2
+        '
+        'label29
+        '
+        Me.label29.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.label29.AutoSize = True
+        Me.label29.Font = New System.Drawing.Font("Palatino Linotype", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.label29.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.label29.Location = New System.Drawing.Point(19, 155)
+        Me.label29.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.label29.Name = "label29"
+        Me.label29.Size = New System.Drawing.Size(80, 26)
+        Me.label29.TabIndex = 5
+        Me.label29.Text = "Ref No."
+        '
+        'Label7
+        '
+        Me.Label7.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Palatino Linotype", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label7.Location = New System.Drawing.Point(23, 116)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(44, 26)
+        Me.Label7.TabIndex = 4
+        Me.Label7.Text = "CIF"
+        '
+        'txtEmail
+        '
+        Me.txtEmail.Font = New System.Drawing.Font("Palatino Linotype", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtEmail.Location = New System.Drawing.Point(279, 112)
+        Me.txtEmail.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtEmail.Multiline = True
+        Me.txtEmail.Name = "txtEmail"
+        Me.txtEmail.Size = New System.Drawing.Size(161, 30)
+        Me.txtEmail.TabIndex = 1
+        '
+        'txtStudentName
+        '
+        Me.txtStudentName.Font = New System.Drawing.Font("Palatino Linotype", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtStudentName.Location = New System.Drawing.Point(280, 195)
+        Me.txtStudentName.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtStudentName.Name = "txtStudentName"
+        Me.txtStudentName.Size = New System.Drawing.Size(275, 34)
+        Me.txtStudentName.TabIndex = 3
+        '
+        'label1
+        '
+        Me.label1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.label1.AutoSize = True
+        Me.label1.Font = New System.Drawing.Font("Palatino Linotype", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.label1.Location = New System.Drawing.Point(17, 199)
+        Me.label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.label1.Name = "label1"
+        Me.label1.Size = New System.Drawing.Size(157, 26)
+        Me.label1.TabIndex = 6
+        Me.label1.Text = "*Custmor Name"
+        '
+        'Label12
+        '
+        Me.Label12.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label12.AutoSize = True
+        Me.Label12.Font = New System.Drawing.Font("Palatino Linotype", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label12.Location = New System.Drawing.Point(41, 715)
+        Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(93, 26)
+        Me.Label12.TabIndex = 710
+        Me.Label12.Text = "*Address"
         '
         'Button2
         '
@@ -333,7 +633,7 @@ Partial Class new_account
         Me.Button2.Margin = New System.Windows.Forms.Padding(4)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(263, 28)
-        Me.Button2.TabIndex = 694
+        Me.Button2.TabIndex = 5
         Me.Button2.Text = "Browse..."
         Me.Button2.UseVisualStyleBackColor = True
         '
@@ -349,123 +649,6 @@ Partial Class new_account
         Me.PictureBox1.TabIndex = 700
         Me.PictureBox1.TabStop = False
         '
-        'rbFemale
-        '
-        Me.rbFemale.AutoSize = True
-        Me.rbFemale.Location = New System.Drawing.Point(394, 249)
-        Me.rbFemale.Margin = New System.Windows.Forms.Padding(4)
-        Me.rbFemale.Name = "rbFemale"
-        Me.rbFemale.Size = New System.Drawing.Size(75, 21)
-        Me.rbFemale.TabIndex = 672
-        Me.rbFemale.TabStop = True
-        Me.rbFemale.Text = "Female"
-        Me.rbFemale.UseVisualStyleBackColor = True
-        '
-        'rbMale
-        '
-        Me.rbMale.AutoSize = True
-        Me.rbMale.Location = New System.Drawing.Point(290, 249)
-        Me.rbMale.Margin = New System.Windows.Forms.Padding(4)
-        Me.rbMale.Name = "rbMale"
-        Me.rbMale.Size = New System.Drawing.Size(59, 21)
-        Me.rbMale.TabIndex = 671
-        Me.rbMale.TabStop = True
-        Me.rbMale.Text = "Male"
-        Me.rbMale.UseVisualStyleBackColor = True
-        '
-        'txtStudentID
-        '
-        Me.txtStudentID.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtStudentID.Font = New System.Drawing.Font("Palatino Linotype", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtStudentID.Location = New System.Drawing.Point(290, 31)
-        Me.txtStudentID.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtStudentID.Name = "txtStudentID"
-        Me.txtStudentID.ReadOnly = True
-        Me.txtStudentID.Size = New System.Drawing.Size(159, 34)
-        Me.txtStudentID.TabIndex = 692
-        '
-        'Label5
-        '
-        Me.Label5.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Palatino Linotype", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.Color.Black
-        Me.Label5.Location = New System.Drawing.Point(30, 66)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(149, 26)
-        Me.Label5.TabIndex = 699
-        Me.Label5.Text = "Custmor Ac No"
-        '
-        'txtMobileNo
-        '
-        Me.txtMobileNo.Font = New System.Drawing.Font("Palatino Linotype", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtMobileNo.Location = New System.Drawing.Point(744, 615)
-        Me.txtMobileNo.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtMobileNo.Name = "txtMobileNo"
-        Me.txtMobileNo.Size = New System.Drawing.Size(220, 34)
-        Me.txtMobileNo.TabIndex = 690
-        '
-        'Label4
-        '
-        Me.Label4.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Palatino Linotype", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.Black
-        Me.Label4.Location = New System.Drawing.Point(612, 615)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(103, 23)
-        Me.Label4.TabIndex = 688
-        Me.Label4.Text = "*Mobile No."
-        '
-        'txtStudentName
-        '
-        Me.txtStudentName.Font = New System.Drawing.Font("Palatino Linotype", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtStudentName.Location = New System.Drawing.Point(290, 206)
-        Me.txtStudentName.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtStudentName.Name = "txtStudentName"
-        Me.txtStudentName.Size = New System.Drawing.Size(275, 34)
-        Me.txtStudentName.TabIndex = 670
-        '
-        'txtPermanentAddress
-        '
-        Me.txtPermanentAddress.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPermanentAddress.Location = New System.Drawing.Point(290, 615)
-        Me.txtPermanentAddress.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtPermanentAddress.Multiline = True
-        Me.txtPermanentAddress.Name = "txtPermanentAddress"
-        Me.txtPermanentAddress.ScrollBars = System.Windows.Forms.ScrollBars.Both
-        Me.txtPermanentAddress.Size = New System.Drawing.Size(297, 29)
-        Me.txtPermanentAddress.TabIndex = 683
-        '
-        'Label3
-        '
-        Me.Label3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Palatino Linotype", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.Black
-        Me.Label3.Location = New System.Drawing.Point(26, 622)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(122, 26)
-        Me.Label3.TabIndex = 698
-        Me.Label3.Text = "Other Notes"
-        '
-        'dtpDOB
-        '
-        Me.dtpDOB.CustomFormat = "dd/MMM/yyyy"
-        Me.dtpDOB.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dtpDOB.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtpDOB.Location = New System.Drawing.Point(290, 667)
-        Me.dtpDOB.Margin = New System.Windows.Forms.Padding(4)
-        Me.dtpDOB.Name = "dtpDOB"
-        Me.dtpDOB.Size = New System.Drawing.Size(161, 26)
-        Me.dtpDOB.TabIndex = 685
-        '
         'Browse
         '
         Me.Browse.Font = New System.Drawing.Font("Palatino Linotype", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -474,86 +657,20 @@ Partial Class new_account
         Me.Browse.Margin = New System.Windows.Forms.Padding(4)
         Me.Browse.Name = "Browse"
         Me.Browse.Size = New System.Drawing.Size(263, 28)
-        Me.Browse.TabIndex = 693
+        Me.Browse.TabIndex = 4
         Me.Browse.Text = "Browse..."
         Me.Browse.UseVisualStyleBackColor = True
-        '
-        'cmbDepartment
-        '
-        Me.cmbDepartment.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
-        Me.cmbDepartment.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
-        Me.cmbDepartment.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmbDepartment.FormattingEnabled = True
-        Me.cmbDepartment.ItemHeight = 18
-        Me.cmbDepartment.Items.AddRange(New Object() {"Saving Account", "Requiring Deposit", "SS Account", "Time Deposit", "RPLI Deposit"})
-        Me.cmbDepartment.Location = New System.Drawing.Point(290, 525)
-        Me.cmbDepartment.Margin = New System.Windows.Forms.Padding(4)
-        Me.cmbDepartment.Name = "cmbDepartment"
-        Me.cmbDepartment.Size = New System.Drawing.Size(189, 26)
-        Me.cmbDepartment.TabIndex = 677
-        Me.cmbDepartment.Text = "Chose One"
         '
         'txtTempAddress
         '
         Me.txtTempAddress.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtTempAddress.Location = New System.Drawing.Point(290, 568)
+        Me.txtTempAddress.Location = New System.Drawing.Point(289, 716)
         Me.txtTempAddress.Margin = New System.Windows.Forms.Padding(4)
         Me.txtTempAddress.Multiline = True
         Me.txtTempAddress.Name = "txtTempAddress"
         Me.txtTempAddress.ScrollBars = System.Windows.Forms.ScrollBars.Both
-        Me.txtTempAddress.Size = New System.Drawing.Size(302, 29)
-        Me.txtTempAddress.TabIndex = 682
-        '
-        'txtFatherName
-        '
-        Me.txtFatherName.Font = New System.Drawing.Font("Palatino Linotype", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtFatherName.Location = New System.Drawing.Point(290, 292)
-        Me.txtFatherName.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtFatherName.Name = "txtFatherName"
-        Me.txtFatherName.Size = New System.Drawing.Size(380, 34)
-        Me.txtFatherName.TabIndex = 674
-        '
-        'txtRollNo
-        '
-        Me.txtRollNo.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtRollNo.Font = New System.Drawing.Font("Palatino Linotype", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtRollNo.Location = New System.Drawing.Point(290, 386)
-        Me.txtRollNo.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtRollNo.Name = "txtRollNo"
-        Me.txtRollNo.Size = New System.Drawing.Size(380, 34)
-        Me.txtRollNo.TabIndex = 676
-        '
-        'txtReceiptNo
-        '
-        Me.txtReceiptNo.Font = New System.Drawing.Font("Palatino Linotype", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtReceiptNo.Location = New System.Drawing.Point(744, 569)
-        Me.txtReceiptNo.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtReceiptNo.Name = "txtReceiptNo"
-        Me.txtReceiptNo.Size = New System.Drawing.Size(220, 34)
-        Me.txtReceiptNo.TabIndex = 689
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Palatino Linotype", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.ForeColor = System.Drawing.Color.Black
-        Me.Label11.Location = New System.Drawing.Point(26, 339)
-        Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(146, 26)
-        Me.Label11.TabIndex = 696
-        Me.Label11.Text = "*Mother Name"
-        '
-        'label25
-        '
-        Me.label25.AutoSize = True
-        Me.label25.Font = New System.Drawing.Font("Palatino Linotype", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label25.Location = New System.Drawing.Point(27, 531)
-        Me.label25.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.label25.Name = "label25"
-        Me.label25.Size = New System.Drawing.Size(144, 26)
-        Me.label25.TabIndex = 695
-        Me.label25.Text = "*Account Type"
+        Me.txtTempAddress.Size = New System.Drawing.Size(672, 29)
+        Me.txtTempAddress.TabIndex = 3
         '
         'Picture
         '
@@ -566,59 +683,6 @@ Partial Class new_account
         Me.Picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.Picture.TabIndex = 687
         Me.Picture.TabStop = False
-        '
-        'label9
-        '
-        Me.label9.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.label9.AutoSize = True
-        Me.label9.Font = New System.Drawing.Font("Palatino Linotype", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label9.ForeColor = System.Drawing.Color.Black
-        Me.label9.Location = New System.Drawing.Point(612, 569)
-        Me.label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.label9.Name = "label9"
-        Me.label9.Size = New System.Drawing.Size(106, 23)
-        Me.label9.TabIndex = 684
-        Me.label9.Text = "*Receipt No."
-        '
-        'label8
-        '
-        Me.label8.AutoSize = True
-        Me.label8.Font = New System.Drawing.Font("Palatino Linotype", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label8.Location = New System.Drawing.Point(26, 388)
-        Me.label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.label8.Name = "label8"
-        Me.label8.Size = New System.Drawing.Size(148, 26)
-        Me.label8.TabIndex = 681
-        Me.label8.Text = "*Nomini Name"
-        '
-        'Label10
-        '
-        Me.Label10.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Palatino Linotype", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.ForeColor = System.Drawing.Color.Black
-        Me.Label10.Location = New System.Drawing.Point(27, 295)
-        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(149, 26)
-        Me.Label10.TabIndex = 679
-        Me.Label10.Text = "*Father's Name"
-        '
-        'label1
-        '
-        Me.label1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.label1.AutoSize = True
-        Me.label1.Font = New System.Drawing.Font("Palatino Linotype", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label1.ForeColor = System.Drawing.Color.Black
-        Me.label1.Location = New System.Drawing.Point(27, 210)
-        Me.label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.label1.Name = "label1"
-        Me.label1.Size = New System.Drawing.Size(157, 26)
-        Me.label1.TabIndex = 673
-        Me.label1.Text = "*Custmor Name"
         '
         'GroupBox1
         '
@@ -633,7 +697,7 @@ Partial Class new_account
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4)
         Me.GroupBox1.Size = New System.Drawing.Size(167, 324)
-        Me.GroupBox1.TabIndex = 5
+        Me.GroupBox1.TabIndex = 1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Control Alt +"
         '
@@ -654,8 +718,8 @@ Partial Class new_account
         Me.Button4.Margin = New System.Windows.Forms.Padding(4)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(112, 43)
-        Me.Button4.TabIndex = 664
-        Me.Button4.Text = "&Print"
+        Me.Button4.TabIndex = 5
+        Me.Button4.Text = "&Show"
         '
         'Button3
         '
@@ -674,8 +738,8 @@ Partial Class new_account
         Me.Button3.Margin = New System.Windows.Forms.Padding(4)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(112, 43)
-        Me.Button3.TabIndex = 665
-        Me.Button3.Text = "&Transction"
+        Me.Button3.TabIndex = 4
+        Me.Button3.Text = "&Sync"
         '
         'btnUpdate_record
         '
@@ -694,7 +758,7 @@ Partial Class new_account
         Me.btnUpdate_record.Margin = New System.Windows.Forms.Padding(4)
         Me.btnUpdate_record.Name = "btnUpdate_record"
         Me.btnUpdate_record.Size = New System.Drawing.Size(112, 43)
-        Me.btnUpdate_record.TabIndex = 663
+        Me.btnUpdate_record.TabIndex = 3
         Me.btnUpdate_record.Text = "&Update"
         '
         'btnDelete
@@ -715,7 +779,7 @@ Partial Class new_account
         Me.btnDelete.Margin = New System.Windows.Forms.Padding(4)
         Me.btnDelete.Name = "btnDelete"
         Me.btnDelete.Size = New System.Drawing.Size(112, 43)
-        Me.btnDelete.TabIndex = 661
+        Me.btnDelete.TabIndex = 2
         Me.btnDelete.Text = "&Delete"
         '
         'btnSave
@@ -735,7 +799,7 @@ Partial Class new_account
         Me.btnSave.Margin = New System.Windows.Forms.Padding(4)
         Me.btnSave.Name = "btnSave"
         Me.btnSave.Size = New System.Drawing.Size(112, 43)
-        Me.btnSave.TabIndex = 662
+        Me.btnSave.TabIndex = 1
         Me.btnSave.Text = "&Save"
         '
         'btnNewRecord
@@ -755,7 +819,7 @@ Partial Class new_account
         Me.btnNewRecord.Margin = New System.Windows.Forms.Padding(4)
         Me.btnNewRecord.Name = "btnNewRecord"
         Me.btnNewRecord.Size = New System.Drawing.Size(112, 43)
-        Me.btnNewRecord.TabIndex = 660
+        Me.btnNewRecord.TabIndex = 0
         Me.btnNewRecord.Text = "&New"
         '
         'new_account
@@ -770,6 +834,16 @@ Partial Class new_account
         Me.Text = "new_account"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        Me.GroupBox6.ResumeLayout(False)
+        Me.GroupBox6.PerformLayout()
+        Me.GroupBox3.ResumeLayout(False)
+        Me.GroupBox3.PerformLayout()
+        Me.GroupBox5.ResumeLayout(False)
+        Me.GroupBox5.PerformLayout()
+        Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox2.PerformLayout()
+        Me.GroupBox4.ResumeLayout(False)
+        Me.GroupBox4.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Picture, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
@@ -825,4 +899,9 @@ Partial Class new_account
     Friend WithEvents btnDelete As DevExpress.XtraEditors.SimpleButton
     Friend WithEvents btnSave As DevExpress.XtraEditors.SimpleButton
     Friend WithEvents btnNewRecord As DevExpress.XtraEditors.SimpleButton
+    Friend WithEvents GroupBox3 As System.Windows.Forms.GroupBox
+    Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
+    Friend WithEvents GroupBox5 As System.Windows.Forms.GroupBox
+    Friend WithEvents GroupBox4 As System.Windows.Forms.GroupBox
+    Friend WithEvents GroupBox6 As System.Windows.Forms.GroupBox
 End Class

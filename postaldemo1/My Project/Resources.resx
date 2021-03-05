@@ -139,6 +139,9 @@
   <data name="8375987" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\8375987.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="DaluAccountPrint" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DaluAccountPrint1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="thumb_cosmos-starts-green-1600x1200" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\thumb_cosmos-starts-green-1600x1200.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -157,7 +160,13 @@
   <data name="worning" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\worning.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="DaluAccountPrint" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DaluAccountPrint1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btnusr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnusr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Settlbl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Settlbl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="userimglbl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\userimglbl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

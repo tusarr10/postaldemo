@@ -22,7 +22,7 @@ Public Class Account_Setting
         Me.Close()
         '*************help***************************
         htext = "May I Help You !!!..."
-        mainfrm.lblhelp.Text = "Help : " + htext
+        ' mainfrm.lblhelp.Text = "Help : " + htext
         '******************END************************
     End Sub
 
@@ -34,7 +34,7 @@ Public Class Account_Setting
         btncf()
         '*************help***************************
         htext = "Here You Can Day Begin !!!...Get Data From Last Working Day !!.. Click GET button to get Data ..."
-        mainfrm.lblhelp.Text = "Help : " + htext
+        '  mainfrm.lblhelp.Text = "Help : " + htext
         '******************END************************
     End Sub
     Sub btncf()
@@ -86,7 +86,7 @@ Public Class Account_Setting
         waitclose()
         '*************help***************************
         htext = "Press Go Button To Go forrword ..!!"
-        mainfrm.lblhelp.Text = "Help : " + htext
+        '   mainfrm.lblhelp.Text = "Help : " + htext
         '******************END************************
 
     End Sub
@@ -114,7 +114,7 @@ Public Class Account_Setting
         End Try
         '*************help***************************
         htext = "You Sync Data from Database .. Now Input Data .. Then Click On Calculate To GoForrword !!...."
-        mainfrm.lblhelp.Text = "Help : " + htext
+        '  mainfrm.lblhelp.Text = "Help : " + htext
         '******************END************************
 
     End Sub
@@ -128,7 +128,7 @@ Public Class Account_Setting
         TextEdit8.Text = 0
         '*************help***************************
         htext = "Now Add New Date ... Click on ADD button ...Change Date First !!.."
-        mainfrm.lblhelp.Text = "Help : " + htext
+        '  mainfrm.lblhelp.Text = "Help : " + htext
         '******************END************************
     End Sub
 
@@ -141,7 +141,7 @@ Public Class Account_Setting
         End Try
         '*************help***************************
         htext = "Press GO Button To go FOrrword ..!!"
-        mainfrm.lblhelp.Text = "Help : " + htext
+        '   mainfrm.lblhelp.Text = "Help : " + htext
         '******************END************************
     End Sub
     Sub Update_rec()
@@ -163,7 +163,7 @@ Public Class Account_Setting
         btnon()
         '*************help***************************
         htext = "If you Change Date Then Click Change Button .. If You Begin new date then Press Add Button ...If you Update Data Of current date then Click Update ... "
-        mainfrm.lblhelp.Text = "Help : " + htext
+        '  mainfrm.lblhelp.Text = "Help : " + htext
         '******************END************************
     End Sub
 

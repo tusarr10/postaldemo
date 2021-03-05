@@ -173,20 +173,6 @@ Public Class UserAc
             cmd.Connection = con
             cmd.ExecuteNonQuery()
             con.Close()
-            'con = New OleDbConnection(cs)
-            'con.Open()
-            'Dim cb2 As String = "insert into Cards_student(StudentID,Status) VALUES('" & txtStudentID.Text & "','No')"
-            'cmd = New OleDbCommand(cb2)
-            'cmd.Connection = con
-            'cmd.ExecuteNonQuery()
-            'con.Close()
-            'con = New OleDbConnection(cs)
-            'con.Open()
-            'Dim cb3 As String = "insert into NoDues_Student(StudentID,Status) VALUES('" & txtStudentID.Text & "','No')"
-            'cmd = New OleDbCommand(cb3)
-            'cmd.Connection = con
-            'cmd.ExecuteNonQuery()
-            'con.Close()
             MessageBox.Show("Successfully saved", " Student Record", MessageBoxButtons.OK, MessageBoxIcon.Information)
             btnSave.Enabled = False
         Catch ex As Exception
@@ -239,11 +225,13 @@ Public Class UserAc
         gropbox2.Text = ""
         txtEmail.Text = ""
         Acbal.Text = ""
+        TextBox1.Text = ""
         txtFatherName.Text = ""
         txtMobileNo.Text = ""
         txtPermanentAddress.Text = ""
         txtPhoneNo.Text = ""
         txtReceiptNo.Text = ""
+        TextBox1.Text = ""
         txtRollNo.Text = ""
         txtSession.Text = ""
         txtStudentName.Text = ""
@@ -369,7 +357,7 @@ Public Class UserAc
             Catch ex As Exception
                 MsgBox("Error" & ex.Message)
             End Try
-            MessageBox.Show("Successfully updated", " Student Record", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            MessageBox.Show("Successfully updated", "  Record", MessageBoxButtons.OK, MessageBoxIcon.Information)
             btnUpdate_record.Enabled = False
         Catch ex As Exception
             MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)

@@ -38,6 +38,7 @@ Public Class new_account
 
     Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
         waitopen()
+
         ' write your method here
         Dim userMsg As String
         userMsg = Microsoft.VisualBasic.InputBox("Enter Transction ID !.", "Entry Form", "")
@@ -73,6 +74,7 @@ Public Class new_account
         waitopen()
 
         Try
+            UserAc.Reset()
             UserAc.TextBox1.Text = TextBox1.Text
             UserAc.txtEmail.Text = txtEmail.Text
             UserAc.txtStudentName.Text = txtStudentName.Text
@@ -101,10 +103,13 @@ Public Class new_account
 
             UserAc.WindowState = FormWindowState.Normal
             UserAc.Show()
+            Me.Close()
 
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
+        UserAc.btnSave.Enabled = True
+
         waitclose()
 
     End Sub
@@ -167,6 +172,15 @@ Public Class new_account
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
+        waitclose()
+
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        waitopen()
+        newUserData.MdiParent = mainfrm
+        newUserData.WindowState = FormWindowState.Normal
+        newUserData.Show()
         waitclose()
 
     End Sub

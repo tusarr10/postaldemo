@@ -131,7 +131,7 @@ Public Class newUserData
             waitopen()
             new_account.MdiParent = mainfrm
             new_account.WindowState = FormWindowState.Normal
-            new_account.Show() : waitclose()
+            new_account.Show() : Me.Close() : waitclose()
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try

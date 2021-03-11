@@ -2,7 +2,7 @@
 
     Public Property AcNo As String
     Public Property CustmorName As String
-    Public Property Gender As String
+    Public Property Genderss As String
     Public Property FatherName As String
     Public Property MotherName As String
     Public Property AcType As String

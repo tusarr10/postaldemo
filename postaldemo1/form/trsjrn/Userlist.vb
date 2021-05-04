@@ -38,12 +38,8 @@ Public Class Userlist
         End Try
     End Sub
     Private Sub txtStudentName_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtStudentName.TextChanged
-        Try
-            DevExpress.XtraSplashScreen.SplashScreenManager.ShowForm(GetType(WaitForm1))
+        waitopen()
 
-        Catch
-
-        End Try
         Try
             con = New OleDbConnection(cs)
             con.Open()
@@ -56,11 +52,8 @@ Public Class Userlist
         Catch ex As Exception
             MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
-        Try
-            DevExpress.XtraSplashScreen.SplashScreenManager.CloseForm()
-        Catch
+        waitclose()
 
-        End Try
 
     End Sub
     Private Sub DataGridView1_RowPostPaint(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewRowPostPaintEventArgs) Handles DataGridView1.RowPostPaint
@@ -203,12 +196,8 @@ Public Class Userlist
     End Sub
 
     Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
-        Try
-            DevExpress.XtraSplashScreen.SplashScreenManager.ShowForm(GetType(WaitForm1))
+        waitopen()
 
-        Catch
-
-        End Try
 
         Try
             con = New OleDbConnection(cs)
@@ -222,10 +211,7 @@ Public Class Userlist
         Catch ex As Exception
             MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
-        Try
-            DevExpress.XtraSplashScreen.SplashScreenManager.CloseForm()
-        Catch
+        waitclose()
 
-        End Try
     End Sub
 End Class

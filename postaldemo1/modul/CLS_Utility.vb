@@ -9,7 +9,7 @@ Module CLS_Utility
     Public Sub waitopen()
         Try
             DevExpress.XtraSplashScreen.SplashScreenManager.ShowForm(GetType(WaitForm1))
-            Threading.Thread.Sleep(10)
+            ' Threading.Thread.Sleep(10)
         Catch
 
         End Try

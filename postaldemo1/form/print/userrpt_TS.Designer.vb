@@ -20,9 +20,9 @@ Partial Public Class userrpt_TS
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim XrSummary1 As DevExpress.XtraReports.UI.XRSummary = New DevExpress.XtraReports.UI.XRSummary()
-        Dim XrSummary2 As DevExpress.XtraReports.UI.XRSummary = New DevExpress.XtraReports.UI.XRSummary()
-        Dim QrCodeGenerator1 As DevExpress.XtraPrinting.BarCode.QRCodeGenerator = New DevExpress.XtraPrinting.BarCode.QRCodeGenerator()
         Dim Code128Generator1 As DevExpress.XtraPrinting.BarCode.Code128Generator = New DevExpress.XtraPrinting.BarCode.Code128Generator()
+        Dim QrCodeGenerator1 As DevExpress.XtraPrinting.BarCode.QRCodeGenerator = New DevExpress.XtraPrinting.BarCode.QRCodeGenerator()
+        Dim XrSummary2 As DevExpress.XtraReports.UI.XRSummary = New DevExpress.XtraReports.UI.XRSummary()
         Me.Detail = New DevExpress.XtraReports.UI.DetailBand()
         Me.XrTable1 = New DevExpress.XtraReports.UI.XRTable()
         Me.XrTableRow1 = New DevExpress.XtraReports.UI.XRTableRow()
@@ -49,7 +49,9 @@ Partial Public Class userrpt_TS
         Me.XrLabel3 = New DevExpress.XtraReports.UI.XRLabel()
         Me.XrLabel2 = New DevExpress.XtraReports.UI.XRLabel()
         Me.GroupHeader1 = New DevExpress.XtraReports.UI.GroupHeaderBand()
+        Me.XrBarCode2 = New DevExpress.XtraReports.UI.XRBarCode()
         Me.XrPanel1 = New DevExpress.XtraReports.UI.XRPanel()
+        Me.XrBarCode1 = New DevExpress.XtraReports.UI.XRBarCode()
         Me.XrPictureBox2 = New DevExpress.XtraReports.UI.XRPictureBox()
         Me.XrPictureBox1 = New DevExpress.XtraReports.UI.XRPictureBox()
         Me.XrLine7 = New DevExpress.XtraReports.UI.XRLine()
@@ -103,8 +105,6 @@ Partial Public Class userrpt_TS
         Me.XrTableCell21 = New DevExpress.XtraReports.UI.XRTableCell()
         Me.XrTableCell22 = New DevExpress.XtraReports.UI.XRTableCell()
         Me.ObjectDataSource1 = New DevExpress.DataAccess.ObjectBinding.ObjectDataSource()
-        Me.XrBarCode1 = New DevExpress.XtraReports.UI.XRBarCode()
-        Me.XrBarCode2 = New DevExpress.XtraReports.UI.XRBarCode()
         CType(Me.XrTable1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.XrTable2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.XrTable3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -378,6 +378,20 @@ Partial Public Class userrpt_TS
         Me.GroupHeader1.HeightF = 445.7679!
         Me.GroupHeader1.Name = "GroupHeader1"
         '
+        'XrBarCode2
+        '
+        Me.XrBarCode2.BorderColor = System.Drawing.Color.Red
+        Me.XrBarCode2.Borders = CType((((DevExpress.XtraPrinting.BorderSide.Left Or DevExpress.XtraPrinting.BorderSide.Top) _
+            Or DevExpress.XtraPrinting.BorderSide.Right) _
+            Or DevExpress.XtraPrinting.BorderSide.Bottom), DevExpress.XtraPrinting.BorderSide)
+        Me.XrBarCode2.LocationFloat = New DevExpress.Utils.PointFloat(4.166667!, 3.125!)
+        Me.XrBarCode2.Name = "XrBarCode2"
+        Me.XrBarCode2.Padding = New DevExpress.XtraPrinting.PaddingInfo(10, 10, 0, 0, 100.0!)
+        Me.XrBarCode2.SizeF = New System.Drawing.SizeF(638.5416!, 31.25!)
+        Me.XrBarCode2.StylePriority.UseBorderColor = False
+        Me.XrBarCode2.StylePriority.UseBorders = False
+        Me.XrBarCode2.Symbology = Code128Generator1
+        '
         'XrPanel1
         '
         Me.XrPanel1.BackColor = System.Drawing.Color.Transparent
@@ -392,6 +406,17 @@ Partial Public Class userrpt_TS
         Me.XrPanel1.StylePriority.UseBorderColor = False
         Me.XrPanel1.StylePriority.UseBorderDashStyle = False
         Me.XrPanel1.StylePriority.UseBorders = False
+        '
+        'XrBarCode1
+        '
+        Me.XrBarCode1.Font = New System.Drawing.Font("Times New Roman", 6.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.XrBarCode1.LocationFloat = New DevExpress.Utils.PointFloat(194.2917!, 7.230441!)
+        Me.XrBarCode1.Module = 3.0!
+        Me.XrBarCode1.Name = "XrBarCode1"
+        Me.XrBarCode1.Padding = New DevExpress.XtraPrinting.PaddingInfo(10, 10, 0, 0, 100.0!)
+        Me.XrBarCode1.SizeF = New System.Drawing.SizeF(252.0833!, 80.20834!)
+        Me.XrBarCode1.StylePriority.UseFont = False
+        Me.XrBarCode1.Symbology = QrCodeGenerator1
         '
         'XrPictureBox2
         '
@@ -901,7 +926,7 @@ Partial Public Class userrpt_TS
         Me.XrLabel10.StylePriority.UseBackColor = False
         Me.XrLabel10.StylePriority.UseFont = False
         Me.XrLabel10.StylePriority.UseTextAlignment = False
-        Me.XrLabel10.Text = "DOB        :"
+        Me.XrLabel10.Text = "Acc Open Day :"
         Me.XrLabel10.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter
         '
         'XrLabel9
@@ -929,7 +954,7 @@ Partial Public Class userrpt_TS
         Me.XrLabel8.StylePriority.UseBackColor = False
         Me.XrLabel8.StylePriority.UseFont = False
         Me.XrLabel8.StylePriority.UseTextAlignment = False
-        Me.XrLabel8.Text = "Mother Name :"
+        Me.XrLabel8.Text = "Date of Birth :"
         Me.XrLabel8.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter
         '
         'XrLabel7
@@ -1043,31 +1068,6 @@ Partial Public Class userrpt_TS
         '
         Me.ObjectDataSource1.DataSource = GetType(postaldemo1.Cls_TS_userdetails)
         Me.ObjectDataSource1.Name = "ObjectDataSource1"
-        '
-        'XrBarCode1
-        '
-        Me.XrBarCode1.Font = New System.Drawing.Font("Times New Roman", 6.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.XrBarCode1.LocationFloat = New DevExpress.Utils.PointFloat(194.2917!, 7.230441!)
-        Me.XrBarCode1.Module = 3.0!
-        Me.XrBarCode1.Name = "XrBarCode1"
-        Me.XrBarCode1.Padding = New DevExpress.XtraPrinting.PaddingInfo(10, 10, 0, 0, 100.0!)
-        Me.XrBarCode1.SizeF = New System.Drawing.SizeF(252.0833!, 80.20834!)
-        Me.XrBarCode1.StylePriority.UseFont = False
-        Me.XrBarCode1.Symbology = QrCodeGenerator1
-        '
-        'XrBarCode2
-        '
-        Me.XrBarCode2.BorderColor = System.Drawing.Color.Red
-        Me.XrBarCode2.Borders = CType((((DevExpress.XtraPrinting.BorderSide.Left Or DevExpress.XtraPrinting.BorderSide.Top) _
-            Or DevExpress.XtraPrinting.BorderSide.Right) _
-            Or DevExpress.XtraPrinting.BorderSide.Bottom), DevExpress.XtraPrinting.BorderSide)
-        Me.XrBarCode2.LocationFloat = New DevExpress.Utils.PointFloat(4.166667!, 3.125!)
-        Me.XrBarCode2.Name = "XrBarCode2"
-        Me.XrBarCode2.Padding = New DevExpress.XtraPrinting.PaddingInfo(10, 10, 0, 0, 100.0!)
-        Me.XrBarCode2.SizeF = New System.Drawing.SizeF(638.5416!, 31.25!)
-        Me.XrBarCode2.StylePriority.UseBorderColor = False
-        Me.XrBarCode2.StylePriority.UseBorders = False
-        Me.XrBarCode2.Symbology = Code128Generator1
         '
         'userrpt_TS
         '

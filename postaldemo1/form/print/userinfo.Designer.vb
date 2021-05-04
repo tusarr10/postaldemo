@@ -24,10 +24,12 @@ Partial Public Class userinfo
         Me.Detail = New DevExpress.XtraReports.UI.DetailBand()
         Me.TopMargin = New DevExpress.XtraReports.UI.TopMarginBand()
         Me.XrLabel1 = New DevExpress.XtraReports.UI.XRLabel()
+        Me.XrBarCode1 = New DevExpress.XtraReports.UI.XRBarCode()
         Me.BottomMargin = New DevExpress.XtraReports.UI.BottomMarginBand()
         Me.XrPageInfo1 = New DevExpress.XtraReports.UI.XRPageInfo()
         Me.GroupHeader1 = New DevExpress.XtraReports.UI.GroupHeaderBand()
         Me.XrPanel1 = New DevExpress.XtraReports.UI.XRPanel()
+        Me.XrBarCode2 = New DevExpress.XtraReports.UI.XRBarCode()
         Me.XrPictureBox2 = New DevExpress.XtraReports.UI.XRPictureBox()
         Me.xlblName = New DevExpress.XtraReports.UI.XRLabel()
         Me.xlblmname = New DevExpress.XtraReports.UI.XRLabel()
@@ -64,14 +66,11 @@ Partial Public Class userinfo
         Me.XrLabel13 = New DevExpress.XtraReports.UI.XRLabel()
         Me.XrLabel10 = New DevExpress.XtraReports.UI.XRLabel()
         Me.XrLabel18 = New DevExpress.XtraReports.UI.XRLabel()
-        Me.XrBarCode1 = New DevExpress.XtraReports.UI.XRBarCode()
         Me.XrLabel19 = New DevExpress.XtraReports.UI.XRLabel()
-        Me.XrBarCode2 = New DevExpress.XtraReports.UI.XRBarCode()
         CType(Me, System.ComponentModel.ISupportInitialize).BeginInit()
         '
         'Detail
         '
-        Me.Detail.Expanded = False
         Me.Detail.HeightF = 100.0!
         Me.Detail.Name = "Detail"
         Me.Detail.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100.0!)
@@ -104,6 +103,19 @@ Partial Public Class userinfo
         Me.XrLabel1.StylePriority.UseTextAlignment = False
         Me.XrLabel1.Text = "User Information"
         Me.XrLabel1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter
+        '
+        'XrBarCode1
+        '
+        Me.XrBarCode1.Alignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter
+        Me.XrBarCode1.Font = New System.Drawing.Font("Times New Roman", 6.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.XrBarCode1.LocationFloat = New DevExpress.Utils.PointFloat(9.226252!, 63.91841!)
+        Me.XrBarCode1.Name = "XrBarCode1"
+        Me.XrBarCode1.Padding = New DevExpress.XtraPrinting.PaddingInfo(10, 10, 0, 0, 100.0!)
+        Me.XrBarCode1.SizeF = New System.Drawing.SizeF(639.5833!, 52.69703!)
+        Me.XrBarCode1.StylePriority.UseFont = False
+        Me.XrBarCode1.StylePriority.UseTextAlignment = False
+        Me.XrBarCode1.Symbology = Code128Generator1
+        Me.XrBarCode1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter
         '
         'BottomMargin
         '
@@ -142,6 +154,18 @@ Partial Public Class userinfo
         Me.XrPanel1.StylePriority.UseBorderDashStyle = False
         Me.XrPanel1.StylePriority.UseBorders = False
         Me.XrPanel1.StylePriority.UseBorderWidth = False
+        '
+        'XrBarCode2
+        '
+        Me.XrBarCode2.AutoModule = True
+        Me.XrBarCode2.Font = New System.Drawing.Font("Times New Roman", 6.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.XrBarCode2.LocationFloat = New DevExpress.Utils.PointFloat(248.9583!, 303.125!)
+        Me.XrBarCode2.Module = 3.0!
+        Me.XrBarCode2.Name = "XrBarCode2"
+        Me.XrBarCode2.Padding = New DevExpress.XtraPrinting.PaddingInfo(10, 10, 0, 0, 100.0!)
+        Me.XrBarCode2.SizeF = New System.Drawing.SizeF(178.125!, 69.79166!)
+        Me.XrBarCode2.StylePriority.UseFont = False
+        Me.XrBarCode2.Symbology = QrCodeGenerator1
         '
         'XrPictureBox2
         '
@@ -499,19 +523,6 @@ Partial Public Class userinfo
         Me.XrLabel18.StylePriority.UseForeColor = False
         Me.XrLabel18.Text = "Account Balance :"
         '
-        'XrBarCode1
-        '
-        Me.XrBarCode1.Alignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter
-        Me.XrBarCode1.Font = New System.Drawing.Font("Times New Roman", 6.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.XrBarCode1.LocationFloat = New DevExpress.Utils.PointFloat(9.226252!, 63.91841!)
-        Me.XrBarCode1.Name = "XrBarCode1"
-        Me.XrBarCode1.Padding = New DevExpress.XtraPrinting.PaddingInfo(10, 10, 0, 0, 100.0!)
-        Me.XrBarCode1.SizeF = New System.Drawing.SizeF(639.5833!, 52.69703!)
-        Me.XrBarCode1.StylePriority.UseFont = False
-        Me.XrBarCode1.StylePriority.UseTextAlignment = False
-        Me.XrBarCode1.Symbology = Code128Generator1
-        Me.XrBarCode1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter
-        '
         'XrLabel19
         '
         Me.XrLabel19.BorderColor = System.Drawing.Color.Red
@@ -533,18 +544,6 @@ Partial Public Class userinfo
         Me.XrLabel19.StylePriority.UseFont = False
         Me.XrLabel19.StylePriority.UseForeColor = False
         Me.XrLabel19.Text = "END"
-        '
-        'XrBarCode2
-        '
-        Me.XrBarCode2.AutoModule = True
-        Me.XrBarCode2.Font = New System.Drawing.Font("Times New Roman", 6.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.XrBarCode2.LocationFloat = New DevExpress.Utils.PointFloat(248.9583!, 303.125!)
-        Me.XrBarCode2.Module = 3.0!
-        Me.XrBarCode2.Name = "XrBarCode2"
-        Me.XrBarCode2.Padding = New DevExpress.XtraPrinting.PaddingInfo(10, 10, 0, 0, 100.0!)
-        Me.XrBarCode2.SizeF = New System.Drawing.SizeF(178.125!, 69.79166!)
-        Me.XrBarCode2.StylePriority.UseFont = False
-        Me.XrBarCode2.Symbology = QrCodeGenerator1
         '
         'userinfo
         '
